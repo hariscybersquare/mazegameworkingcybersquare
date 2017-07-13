@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Blockly by Haris</title>
+<script src="blockly/blockly_compressed.js"></script>
+<script src="blockly/blocks_compressed.js"></script>
+<script src="blockly/msg/js/en.js"></script>
+<script src="customblock.js"></script>
+</head>
+<body>
+<div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+
+<xml id="toolbox" style="display: none">
+<category name="HarisCategory" colour="290">
+  <block type="controls_if"></block>
+  <block type="controls_repeat_ext"></block>
+  <block type="logic_compare"></block>
+  <block type="math_number"></block>
+  <block type="math_arithmetic"></block>
+  <block type="text"></block>
+  <block type="text_print"></block>
+</category>
+<category name="Text" colour="200">
+    <block type="string_length"></block>
+    <block type="math_change"></block>
+    <block type="maze_moveForward"></block>
+  </category>
+</xml>
+<script>
+  var workspace = Blockly.inject('blocklyDiv',
+      {toolbox: document.getElementById('toolbox')});
+</script>
+</body>
+</html>

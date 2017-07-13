@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id ="harisp"></p>
+<script type="text/javascript">
+function haris (name, age, sex) {
+	this.name = name;
+	this.age = age;
+	this.sex = sex;
+}
+haris.prototype.place = "Karassery";
+obj_haris = new haris ("Haris", 23, "Male");
+obj_haris1 = new haris ("Raisha", 20, "Female");
+
+document.getElementById("harisp").innerHTML = "The value in haris is " + obj_haris.name +" " + obj_haris.age + " " + obj_haris.sex +" " + obj_haris.place  ;
+
+document.getElementById("harisp").innerHTML = document.getElementById("harisp").innerHTML + " " + "The value in haris is " + obj_haris1.name +" " + obj_haris1.age + " " + obj_haris1.sex +" " + obj_haris.place   ;
+</script>
+</body>
+</html>
